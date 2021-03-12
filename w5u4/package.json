@@ -1,9 +1,17 @@
 {
-    "name": "grunt-build",
-    "version": "0.0.1",
-    "description": "Grunt build",
-    "private": true,
-    "devDependencies": {
-        "@sap/grunt-sapui5-bestpractice-build": "1.3.62"
-    }
+  "name": "grunt-build",
+  "version": "0.0.1",
+  "description": "Grunt build",
+  "private": true,
+  "devDependencies": {
+    "@sap/grunt-sapui5-bestpractice-build": "1.4.12"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "snyk": "^1.485.0"
+  }
 }
