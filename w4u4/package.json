@@ -19,10 +19,10 @@
 		"@openui5/themelib_sap_belize": "^1.60"
 	},
 	"devDependencies": {
-		"@ui5/cli": "^1.2.0",
-		"karma": "^4.0.1",
+		"@ui5/cli": "^2.0.0",
+		"karma": "^6.0.0",
 		"karma-chrome-launcher": "^2.2.0",
 		"karma-coverage": "^1.1.2",
-		"karma-ui5": "^1.0.0"
+		"karma-ui5": "^2.0.0"
 	}
 }
