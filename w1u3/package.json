@@ -11,18 +11,21 @@
     "watch": "start-server-and-test start http://localhost:8080 karma",
     "test": "npm run lint && rimraf coverage && start-server-and-test start http://localhost:8080 karma-ci",
     "build": "rimraf dist && ui5 build --a",
-    "proxy": "node proxy.js"
+    "proxy": "node proxy.js",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "@openui5/sap.m": "^1.52.5",
     "@openui5/sap.ui.core": "^1.52.5",
     "@openui5/sap.ui.layout": "^1.52.5",
-    "@openui5/themelib_sap_belize": "^1.52.5"
+    "@openui5/themelib_sap_belize": "^1.52.5",
+    "snyk": "^1.483.0"
   },
   "devDependencies": {
-    "@ui5/cli": "^1.0.0",
-    "eslint": "^4.19.1",
-    "karma": "^2.0.2",
+    "@ui5/cli": "^2.0.0",
+    "eslint": "^5.0.0",
+    "karma": "^6.0.0",
     "karma-chrome-launcher": "^2.2.0",
     "chrome-headless-launcher": "^0.1.5",
     "karma-coverage": "^1.1.2",
@@ -32,5 +35,6 @@
     "rimraf": "^2.6.2",
     "start-server-and-test": "^1.4.1",
     "cors-anywhere": "^0.4.1"
-  }
+  },
+  "snyk": true
 }
