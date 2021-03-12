@@ -1,0 +1,27 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.19.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hoek:20180212':
+    - '@sap/grunt-sapui5-bestpractice-test > karma > log4js > loggly > request > hawk > hoek':
+        patched: '2021-03-12T07:48:25.339Z'
+    - '@sap/grunt-sapui5-bestpractice-test > karma > log4js > loggly > request > hawk > boom > hoek':
+        patched: '2021-03-12T07:48:25.339Z'
+    - '@sap/grunt-sapui5-bestpractice-test > karma > log4js > loggly > request > hawk > sntp > hoek':
+        patched: '2021-03-12T07:48:25.339Z'
+    - '@sap/grunt-sapui5-bestpractice-test > karma > log4js > loggly > request > hawk > cryptiles > boom > hoek':
+        patched: '2021-03-12T07:48:25.339Z'
+  'npm:lodash:20180130':
+    - '@sap/grunt-sapui5-bestpractice-test > grunt-karma > lodash':
+        patched: '2021-03-12T07:48:25.339Z'
+    - '@sap/grunt-sapui5-bestpractice-test > karma-coverage > lodash':
+        patched: '2021-03-12T07:48:25.339Z'
+  'npm:mime:20170907':
+    - '@sap/grunt-sapui5-bestpractice-test > grunt-openui5 > less-openui5 > less > mime':
+        patched: '2021-03-12T07:48:25.339Z'
+    - '@sap/grunt-sapui5-bestpractice-test > grunt-openui5 > connect-openui5 > less-openui5 > less > mime':
+        patched: '2021-03-12T07:48:25.339Z'
+  'npm:tunnel-agent:20170305':
+    - '@sap/grunt-sapui5-bestpractice-test > karma > log4js > loggly > request > tunnel-agent':
+        patched: '2021-03-12T07:48:25.339Z'
