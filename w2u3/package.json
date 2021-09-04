@@ -8,6 +8,12 @@
     "@sap/grunt-sapui5-bestpractice-test": "2.0.0"
   },
   "scripts": {
-    "test": "grunt unit_and_integration_tests"
+    "test": "grunt unit_and_integration_tests",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
