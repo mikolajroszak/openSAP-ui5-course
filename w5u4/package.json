@@ -4,7 +4,7 @@
   "description": "Grunt build",
   "private": true,
   "devDependencies": {
-    "@sap/grunt-sapui5-bestpractice-build": "1.4.12"
+    "@sap/grunt-sapui5-bestpractice-build": "1.4.15"
   },
   "scripts": {
     "snyk-protect": "snyk protect",
